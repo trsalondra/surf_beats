@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.song-container {
+    background-color: lightblue;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.player-container {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-control {
+    background-color: lightcoral;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.time-control input {
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.time-control span {
+    padding: 1rem;
+}
+
+.play-control {
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 30%;
+
+}
+
+.play-control svg {
+    cursor: pointer;
+}
