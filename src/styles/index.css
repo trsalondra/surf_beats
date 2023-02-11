@@ -4,13 +4,33 @@
     box-sizing: border-box;
 }
 
+h1, 
+h2, 
+h3 {
+    color: rgb(54, 54, 54);
+}
+
 .song-container {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;    
     align-items: center;
+}
+
+.song-container img {
+    width: 20%;
+    border-radius: 50%;
+
+}
+
+.song-container h2 {
+    padding: 3rem 1rem 1rem  1rem;
+}
+
+.song-container h3 {
+    font-size: 1rem;
 }
 
 .player-container {
@@ -22,7 +42,7 @@
 }
 
 .time-control {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -39,13 +59,12 @@
 }
 
 .play-control {
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     width: 30%;
-
 }
 
 .play-control svg {
