@@ -36,6 +36,14 @@ h4 {
     color: rgb(100, 100, 100);
 }
 
+.App {
+    transition: all 0.5s ease;
+}
+
+.active-App {
+    margin-left: 30%;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -94,6 +102,7 @@ nav>button:hover {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .time-control input {
@@ -101,6 +110,24 @@ nav>button:hover {
     padding: 1rem 0rem;
     cursor: pointer;
 }
+
+
+
+/* progress {
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(200, 200, 200);
+    border-radius: 0.25rem;
+}
+
+::-webkit-progress-value {
+    background: linear-gradient(to right, red, blue);
+    border-radius: 0.25rem;
+} */
 
 .time-control span {
     padding: 1rem;
@@ -141,6 +168,7 @@ nav>button:hover {
     align-items: center;
     padding: 2rem 2rem 1rem 2rem;
     cursor: pointer;
+    transition: background 0.5s ease;
 }
 
 .library-song:hover {
@@ -170,4 +198,26 @@ nav>button:hover {
 .active-library {
     transform: translateX(0%);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .song-container img {
+        width: 60%;
+    }
+
+    .time-control {
+        width: 90%;
+    }
+
+    .play-control {
+        width: 60%;
+    }
+
+    nav > button {
+        z-index: 10;
+    }
+
+    .library {
+        width: 100%;
+    }
 }
